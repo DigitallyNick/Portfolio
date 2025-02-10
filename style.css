@@ -59,11 +59,19 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
 }
 
 .logo:hover {
     cursor: default;
+}
+
+.logo-img {
+    height: 30px;
 }
 
 /* HAMBURGER MENU */
@@ -165,14 +173,14 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
     height: 80vh;
 }
 
 .section__pic-container {
     display: flex;
     height: 400px;
-    width: 400px;
+    width: 250px;
     margin: auto 0;
 }
 
@@ -191,7 +199,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
     font-weight: 400 !important;
     width: 70%;
@@ -206,10 +214,29 @@ section {
 .title {
     font-size: 2.5rem;
     text-align: center;
+    line-height: 1.25;
 }
 
 #title {
     color: #CB2B1A;
+}
+
+/* ICONS */
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.icon:hover {
+    color: #CB2B1A !important;
 }
 
 /* BUTTONS */
@@ -218,74 +245,46 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.btn {
+  }
+  
+  .btn {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-}
-
-.btn-color-2 {
-    border: calc(0.08 * var(--m)) solid transparent;
-    color: #F3F3F3;
-    border-radius: calc(0.7 * var(--m));
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
     cursor: pointer;
-    background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    background-size: 200%;
-    animation: animate 2s infinite linear;    
-}
-
-.btn-container {
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(0, 0, 0);
+  }
+  
+  .btn-color-2 {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
     gap: 1rem;
-}
+  }
 
-:root {
-    /*  change this for scaling  */
-    --m: 4rem;
-      
-    --red: #FF6565;
-    --pink: #FF64F9;
-    --purple: #6B5FFF;
-    --blue: #4D8AFF;
-    --green: #5BFF89;
-    --yellow: #FFEE55;
-    --orange: #FF6D1B;
-      
-}
-    
-.button-color-2:before {
-    content: '';
-    background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
-    height: 30%;
-    width: 60%;
-    position: absolute;
-    bottom: -20%;
-    z-index: -5;
-    background-size: 200%;
-    animation: animate 2s infinite linear;
-    filter: blur(calc(0.8 * var(--m)));
-}
-    
-.button-color-2:hover, .button-color-1:hover:before {
-    animation: animate 0.5s infinite linear;
-}
-    
-@keyframes animate {
-    0% {background-position: 0}
-    100% {background-position: 200%}
-}
-    
-@media screen and (max-width: 1000px) {
-    :root {
-    --m: 2rem;
-    }
-}
-
+  
