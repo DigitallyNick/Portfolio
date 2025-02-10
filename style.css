@@ -187,16 +187,29 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .section__text__p2 {
-    font-size: 1.7rem;
-    margin-bottom: 1rem
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400 !important;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+#job-title {
+    font-weight: bold;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
+}
+
+#title {
+    color: #CB2B1A;
 }
 
 /* BUTTONS */
@@ -216,20 +229,6 @@ section {
 }
 
 .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-
-.btn-color-2 {
-    background: #121213;
-    color: white;
-}
-
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1 {
     border: calc(0.08 * var(--m)) solid transparent;
     color: #F3F3F3;
     border-radius: calc(0.7 * var(--m));
@@ -237,7 +236,6 @@ section {
     display: flex;
     justify-content: center;
     cursor: pointer;
-      
     background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
     background-origin: border-box;
     background-clip: padding-box, border-box, border-box;
@@ -263,7 +261,7 @@ section {
       
 }
     
-.button-color-1:before {
+.button-color-2:before {
     content: '';
     background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
     height: 30%;
@@ -276,7 +274,7 @@ section {
     filter: blur(calc(0.8 * var(--m)));
 }
     
-.button-color-1:hover, .button-color-1:hover:before {
+.button-color-2:hover, .button-color-1:hover:before {
     animation: animate 0.5s infinite linear;
 }
     
@@ -290,3 +288,4 @@ section {
     --m: 2rem;
     }
 }
+
