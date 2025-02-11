@@ -19,6 +19,10 @@ p {
     color: rgb(85, 85, 85);
 }
 
+::selection {
+    background: rgba(203, 43, 26, 0.);
+}
+
 /* TRANSITION */
 
 a, 
@@ -63,7 +67,7 @@ a:hover {
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 1px;
+    gap: 3px;
 }
 
 .logo:hover {
@@ -173,7 +177,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     height: 80vh;
 }
 
@@ -222,8 +226,6 @@ section {
     color: #CB2B1A;
 }
 
-/* ICONS */
-
 #socials-container {
     display: flex;
     justify-content: center;
@@ -231,16 +233,26 @@ section {
     gap: 1.5rem;
 }
 
+/* ICONS */
+
 .icon {
-    cursor: pointer;
-    font-size: 24px;
+    cursor: default;
+    font-size: 22px;
+}
+
+.icon-arrow {
+    height: 2rem;
 }
 
 .fa-rss {
     font-size: 22px;
 }
 
-.icon:hover {
+.fa-brands {
+    font-size: 24px;
+}
+
+.fa-brands:hover, .fa-rss:hover {
     color: #CB2B1A !important;
 }
 
@@ -249,7 +261,7 @@ section {
 .btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .btn {
@@ -280,7 +292,8 @@ section {
   }
   
   .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: #CB2B1A;
+    border: #CB2B1A;
   }
   
   .btn-color-2 {
@@ -295,3 +308,59 @@ section {
     gap: 1rem;
   }
   
+  /* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  .details-container:hover {
+    border-color: #CB2B1A;
+    cursor: default;
+  } 
+  
+  .section-container {
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
