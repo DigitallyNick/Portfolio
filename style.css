@@ -52,10 +52,10 @@ a {
 }
 
 a:hover {
-    color: #9278bf;
+    color: #CB2B1A;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: #9278bf;
+    text-decoration-color: #CB2B1A;
 }
 
 .logo {
@@ -215,6 +215,7 @@ section {
     font-size: 2.5rem;
     text-align: center;
     line-height: 1.25;
+    margin-bottom: 1rem;
 }
 
 #title {
@@ -227,12 +228,16 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .icon {
     cursor: pointer;
     font-size: 24px;
+}
+
+.fa-rss {
+    font-size: 22px;
 }
 
 .icon:hover {
@@ -263,6 +268,9 @@ section {
   .btn-color-1:hover,
   .btn-color-2:hover {
     cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .btn-color-1,
@@ -286,5 +294,4 @@ section {
   .btn-container {
     gap: 1rem;
   }
-
   
